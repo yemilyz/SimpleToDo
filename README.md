@@ -26,6 +26,8 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/yemilyz/SimpleToDo/blob/master/Walkthrough2.gif' title='Color Implementation' width='' alt='Color Implementation' />
 
+![Walkthrough](Walkthrough.gif)
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
