@@ -15,7 +15,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:onClick="onAddItem"
-        android:background="#f154e2"
+        android:background="#368bc1"
         android:typeface="serif"
         android:text="Add" />
 
@@ -28,20 +28,22 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:background="#93f154"
+        android:background="#e5e4e2"
         android:layout_alignParentTop="true" />
 
     <EditText
         android:id="@+id/etNewItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/btnAddItem"
-        android:layout_toStartOf="@+id/btnAddItem"
+        android:background="#c2dfff"
         android:ems="10"
         android:typeface="serif"
         android:hint="Add a new item"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lvItems"
+        android:layout_toLeftOf="@+id/btnAddItem"
+        android:layout_toStartOf="@+id/btnAddItem" />
 </RelativeLayout>

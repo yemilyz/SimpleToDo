@@ -4,33 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ebf4fa"
     tools:context="com.example.emilyz.simpletodo.EditItemActivity">
 
     <EditText
         android:id="@+id/etItemText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:ems="10"
         android:hint="Enter Item Description"
-        android:background="#a17c04"
+        android:background="#f0ffff"
         android:typeface="serif"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/etItemText"
         android:onClick="onSaveItem"
         android:typeface="serif"
-        android:background="#527fcb"
-        android:text="Save" />
+        android:background="#43bfc7"
+        android:text="Save"
+        android:layout_below="@+id/etItemText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

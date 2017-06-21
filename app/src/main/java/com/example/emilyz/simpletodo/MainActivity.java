@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
             //notify the user the operation is complete
             Toast.makeText(this, "Item updated successfully", Toast.LENGTH_SHORT).show();
         }
+
     }
 
     //persistence functions
