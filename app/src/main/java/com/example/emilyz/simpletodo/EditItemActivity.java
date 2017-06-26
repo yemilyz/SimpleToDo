@@ -3,6 +3,7 @@ package com.example.emilyz.simpletodo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
@@ -27,6 +28,10 @@ public class EditItemActivity extends AppCompatActivity {
         position = getIntent().getIntExtra(ITEM_POSITION, 0);
         //update title bar of activity
         getSupportActionBar().setTitle("Edit Item");
+        if (getSupportActionBar()!=null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        }
     }
 
     //function for save button
@@ -43,5 +48,11 @@ public class EditItemActivity extends AppCompatActivity {
         finish();
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home){
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
